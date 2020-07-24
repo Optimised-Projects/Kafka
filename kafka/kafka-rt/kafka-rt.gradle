@@ -1,0 +1,40 @@
+/* Module Build File */
+
+description     = "Kafka Driver"
+ext {
+}
+niagaraModule {
+  moduleName = "kafka"
+  preferredSymbol = "ok"
+  runtimeProfile = "rt"
+}
+
+dependencies {
+
+  uberjar files('lib/kafka-clients-2.5.0.jar')
+  compile 'kafka-clients:kafka-clients:2.5.0'
+  uberjar files('lib/lz4-java-1.7.1.jar')
+  compile 'lz4-java:lz4-java:1.7.1'
+  uberjar files('lib/slf4j-api-1.7.30.jar')
+  compile('slf4j-api:slf4j-api:1.7.30')
+  uberjar files('lib/snappy-java-1.1.7.3.jar')
+  compile('snappy-java:snappy-java:1.1.7.3')
+  uberjar files('lib/zstd-jni-1.4.4-7.jar')
+  compile('zstd-jni:zstd-jni:1.4.4-7')
+
+
+
+  compile "Tridium:nre:4.8"
+  compile "Tridium:baja:4.8"
+  compile "Tridium:control-rt:4.8"
+  compile "Tridium:driver-rt:4.8"
+  compile "Tridium:history-rt:4.8"
+  compile "Tridium:ndriver-rt:4.8"
+  compile "Tridium:alarm-rt:4.8"
+  compile "Tridium:abstractMqttDriver-rt:4.8"
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}

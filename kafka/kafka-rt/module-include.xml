@@ -1,0 +1,15 @@
+<!-- Module Include File -->
+<!-- Types -->
+<types>
+  <!-- Type Example:<type name="MyClass" class="com.acme.BMyClass"/> -->
+  <!--com.optimised_buildings_ltd.kafka-->
+  <type class="com.optimised_buildings_ltd.kafka.BKafkaDevice" name="KafkaDevice"/>
+  <type class="com.optimised_buildings_ltd.kafka.BKafkaDeviceFolder" name="KafkaDeviceFolder"/>
+  <type class="com.optimised_buildings_ltd.kafka.BKafkaNetwork" name="KafkaNetwork"/>
+  <type class="com.optimised_buildings_ltd.kafka.BTestComponent" name="TestComponent"/>
+  <type class="com.optimised_buildings_ltd.kafka.BMqttStringSubscriberPoint" name="MqttStringSubscriberPoint"/>
+  <type class="com.optimised_buildings_ltd.kafka.BKafkaNumericSensor" name="KafkaNumericSensor"/>
+  <type class="com.optimised_buildings_ltd.kafka.BKafkaPointDeviceExt" name="KafkaPointDeviceExt"/>
+  <type class="com.optimised_buildings_ltd.kafka.BKafkaPointFolder" name="KafkaPointFolder"/>
+  <type class="com.optimised_buildings_ltd.kafka.BKafkaSensorExt" name="KafkaSensorExt"/>
+</types>
